@@ -24,25 +24,7 @@ class Haberler extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
         child: Scaffold(
-            appBar: AppBar(
-              centerTitle: true,
-              title: Text("Sözcü"),
-              actions: [
-                IconButton(
-                    icon: Icon(
-                      Icons.search,
-                      color: Colors.white,
-                    ),
-                    onPressed: null),
-                IconButton(
-                    icon: Icon(
-                      Icons.list,
-                      color: Colors.white,
-                    ),
-                    onPressed: null),
-              ],
-            ),
-            // drawer: CustomDrawer(),
+           
             body: SingleChildScrollView(
                 child: Column(
               children: [

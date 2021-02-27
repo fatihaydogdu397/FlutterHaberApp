@@ -11,11 +11,6 @@ class Ayarlar extends StatelessWidget {
     return SafeArea(
         child: Scaffold(
       backgroundColor: Colors.grey[200],
-      // drawer: CustomDrawer(),
-      appBar: AppBar(
-        centerTitle: true,
-        title: Text("Ayarlar"),
-      ),
       body: SingleChildScrollView(
           child: Padding(
         padding: EdgeInsets.all(8.0),

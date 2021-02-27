@@ -10,10 +10,7 @@ class Gundem extends StatelessWidget {
     return SafeArea(
         child: Scaffold(
       // drawer: CustomDrawer(),
-      appBar: AppBar(
-        centerTitle: true,
-        title: Text("Gündem"),
-      ),
+     
       body: SingleChildScrollView(
           child: Column(
         children: [

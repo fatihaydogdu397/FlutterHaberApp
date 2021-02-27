@@ -70,18 +70,43 @@ class _NavbarRouteState extends State<NavbarRoute> {
     ];
   }
 
+  List<String> titles = ["Haber Kaynağı", "Gündem", "Ayarlar"];
+  int currentIndex=0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       drawer: CustomDrawer(),
+      appBar: AppBar(
+        centerTitle: true,
+        title: Text("${titles[currentIndex]}"),
+        actions: [
+          if (currentIndex == 0)
+            IconButton(
+                icon: Icon(
+                  Icons.search,
+                  color: Colors.white,
+                ),
+                onPressed: null),
+          IconButton(
+              icon: Icon(
+                Icons.list,
+                color: Colors.white,
+              ),
+              onPressed: null),
+        ],
+      ),
       body: PersistentTabView(
         context,
+        onItemSelected: (value) {
+          setState(() {
+            currentIndex = value;
+          });
+        },
         controller: _controller,
         screens: _buildScreens(),
         items: _navBarsItems(),
         confineInSafeArea: true,
         backgroundColor: Colors.black.withOpacity(0.3),
-
         handleAndroidBackButtonPress: true,
         resizeToAvoidBottomInset: true,
         stateManagement: true,

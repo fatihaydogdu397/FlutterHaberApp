@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:haber/core/components/drawer.dart';
 import 'package:haber/view/ayarlar.dart';
 import 'package:haber/view/gundem.dart';
 import 'package:haber/view/haberler.dart';
@@ -72,6 +73,7 @@ class _NavbarRouteState extends State<NavbarRoute> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: CustomDrawer(),
       body: PersistentTabView(
         context,
         controller: _controller,

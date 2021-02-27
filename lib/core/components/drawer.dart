@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:haber/core/components/custom_material_button.dart';
 
 class CustomDrawer extends StatelessWidget {
   const CustomDrawer({Key key}) : super(key: key);
@@ -9,11 +10,14 @@ class CustomDrawer extends StatelessWidget {
         child: Column(
       children: [
         Container(),
-        SingleChildScrollView(
-          child: Column(
-            children: [DDButton()],
+        Expanded(
+          child: SingleChildScrollView(
+            child: Column(
+              children: [DDButton()],
+            ),
           ),
-        )
+        ),
+        CustomMaterialButton()
       ],
     )
         // All other codes goes here.
@@ -26,18 +30,24 @@ class DDButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-        child: DropdownButton<String>(
-          elevation: 3,
-          hint: Text("asdad"),
+    return ExpansionTile(
+      title: Text("Gündem"),
+      children: [
+        ListTile(
+          leading: Image(
+            width: 50,
+            image: NetworkImage(
+
+                "https://www.freelogovectors.net/wp-content/uploads/2018/03/hurriyet-gazetesi-logo.png"),
+            fit: BoxFit.fitWidth,
+          ),
           
-      items: <String>['A', 'B', 'C', 'D'].map((String value) {
-        return new DropdownMenuItem<String>(
-          value: value,
-          child: new Text(value),
-        );
-      }).toList(),
-      onChanged: (_) {},
-    ));
+          title: Padding(
+            padding:  EdgeInsets.only(left:20.0),
+            child: Text("Hürriyet",style: TextStyle(fontSize:16),),
+          ),
+        )
+      ],
+    );
   }
 }

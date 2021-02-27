@@ -42,7 +42,7 @@ class Haberler extends StatelessWidget {
                     onPressed: null),
               ],
             ),
-            drawer: CustomDrawer(),
+            // drawer: CustomDrawer(),
             body: SingleChildScrollView(
                 child: Column(
               children: [

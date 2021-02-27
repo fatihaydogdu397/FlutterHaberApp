@@ -9,7 +9,7 @@ class Gundem extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
         child: Scaffold(
-      drawer: CustomDrawer(),
+      // drawer: CustomDrawer(),
       appBar: AppBar(
         centerTitle: true,
         title: Text("Gündem"),

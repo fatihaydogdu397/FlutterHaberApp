@@ -71,7 +71,7 @@ class _NavbarRouteState extends State<NavbarRoute> {
   }
 
   List<String> titles = ["Haber Kaynağı", "Gündem", "Ayarlar"];
-  int currentIndex=0;
+  int currentIndex = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -87,12 +87,13 @@ class _NavbarRouteState extends State<NavbarRoute> {
                   color: Colors.white,
                 ),
                 onPressed: null),
-          IconButton(
-              icon: Icon(
-                Icons.list,
-                color: Colors.white,
-              ),
-              onPressed: null),
+          if (currentIndex == 0)
+            IconButton(
+                icon: Icon(
+                  Icons.list,
+                  color: Colors.white,
+                ),
+                onPressed: null),
         ],
       ),
       body: PersistentTabView(

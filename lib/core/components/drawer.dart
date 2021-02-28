@@ -9,7 +9,7 @@ class CustomDrawer extends StatelessWidget {
     return Drawer(
         child: Column(
       children: [
-        Container(),
+        DrawerHeader(child: Center(child: Text("Haberler",textAlign: TextAlign.center,style:TextStyle(fontSize: 20)))),
         Expanded(
           child: SingleChildScrollView(
             child: Column(

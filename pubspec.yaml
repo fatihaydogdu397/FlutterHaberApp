@@ -30,6 +30,7 @@ dependencies:
   cupertino_icons: ^1.0.0
   persistent_bottom_nav_bar: any
   auto_size_text: ^2.1.0
+  font_awesome_flutter: ^8.11.0
   material_design_icons_flutter: 4.0.5755
   line_awesome_flutter: 
 

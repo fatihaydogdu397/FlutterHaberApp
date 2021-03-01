@@ -33,7 +33,7 @@ class Ayarlar extends StatelessWidget {
                     children: [
                       Padding(
                         padding: EdgeInsets.all(10.0),
-                        child: Icon(Icons.post_add_rounded,
+                        child: Icon(Icons.add_box,
                             size: 30, color: Colors.grey[600]),
                       ),
                       Padding(
@@ -53,7 +53,7 @@ class Ayarlar extends StatelessWidget {
                         children: [
                           Padding(
                             padding: EdgeInsets.all(10.0),
-                            child: Icon(Icons.insert_chart_outlined_rounded,
+                            child: Icon(Icons.insert_chart,
                                 size: 30, color: Colors.grey[600]),
                           ),
                           Padding(
@@ -79,7 +79,7 @@ class Ayarlar extends StatelessWidget {
                         children: [
                           Padding(
                             padding: EdgeInsets.all(10.0),
-                            child: Icon(Icons.image_outlined,
+                            child: Icon(Icons.image,
                                 size: 30, color: Colors.grey[600]),
                           ),
                           Padding(
@@ -105,7 +105,7 @@ class Ayarlar extends StatelessWidget {
                         children: [
                           Padding(
                             padding: EdgeInsets.all(10.0),
-                            child: Icon(Icons.notifications_none_rounded,
+                            child: Icon(Icons.notifications_none,
                                 size: 30, color: Colors.grey[600]),
                           ),
                           Padding(

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:haber/core/components/custom_material_button.dart';
+import 'package:haber/view/explore/explore_page.dart';
 // import 'package:haber/view/kaynak_sec.dart';
 
 class CustomDrawer extends StatelessWidget {
@@ -27,7 +28,7 @@ class CustomDrawer extends StatelessWidget {
             onTap: () {
               Navigator.push(context,
                   MaterialPageRoute(builder: (BuildContext context) {
-                return null;
+                return ExplorePage();
               }));
             })
       ],

@@ -3,6 +3,7 @@ import 'package:haber/core/components/drawer.dart';
 import 'package:haber/view/ayarlar.dart';
 import 'package:haber/view/gundem.dart';
 import 'package:haber/view/haberler.dart';
+import 'package:line_awesome_flutter/line_awesome_flutter.dart';
 import 'package:persistent_bottom_nav_bar/persistent-tab-view.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
@@ -44,13 +45,13 @@ class _NavbarRouteState extends State<NavbarRoute> {
         inactiveColor: Colors.grey[300],
       ),
       PersistentBottomNavBarItem(
-        icon: Icon(Icons.article),
+        icon: Icon(LineAwesomeIcons.newspaper),
         title: ("Gündem"),
         activeColor: Colors.white,
         inactiveColor: Colors.grey[300],
       ),
       PersistentBottomNavBarItem(
-        icon: Icon(Icons.settings_outlined),
+        icon: Icon(Icons.settings),
         title: ("Ayarlar"),
         activeColor: Colors.white,
         inactiveColor: Colors.grey[300],
